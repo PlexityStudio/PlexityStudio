@@ -3,7 +3,7 @@ bin-int/
 x64/
 PlexityStudio/Vendors/Vulkan/
 .vs/
-.sln
+*.sln
 *.vcxproj
 *.vcxproj.filters
 *.vcxproj.user

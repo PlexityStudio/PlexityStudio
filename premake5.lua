@@ -4,7 +4,7 @@ printf("Generating project files.")
 
 workspace "PlexityStudio"
 	architecture "x86_64"
-	startproject "PlexityStudio"
+	startproject "Sandbox"
 
 	configurations
 	{

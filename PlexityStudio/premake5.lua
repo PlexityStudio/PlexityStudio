@@ -14,8 +14,8 @@ project "PlexityEngine"
 	{
 		"Source/**.h",
 		"Source/**.cpp",
-		"Vendor/glm/glm/**.hpp",
-		"Vendor/glm/glm/**.inl",
+		"Vendors/glm/glm/**.hpp",
+		"Vendors/glm/glm/**.inl",
 	}
 
 	defines

@@ -17,11 +17,14 @@ project "Sandbox"
 	{
 		"%{wks.location}/PlexityStudio/Vendors/spdlog/include",
 		"%{wks.location}/PlexityStudio/Source",
-		"%{wks.location}/PlexityStudio/Vendors"
+		"%{wks.location}/PlexityStudio/Vendors",
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.glm}",
 	}
 
 	links
 	{
+		"GLFW",
 		"%{wks.location}/bin/" .. outputdir .. "/PlexityEngine/PlexityEngine.lib"
 	}
 
