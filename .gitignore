@@ -1,0 +1,9 @@
+bin/
+bin-int/
+x64/
+PlexityStudio/Vendors/Vulkan/
+.vs/
+.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user

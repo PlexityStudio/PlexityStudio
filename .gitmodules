@@ -1,0 +1,9 @@
+[submodule "PlexityStudio/Vendors/GLFW"]
+	path = PlexityStudio/Vendors/GLFW
+	url = https://github.com/PlexityStudio/glfw.git
+[submodule "PlexityStudio/Source/Vendors/glm"]
+	path = PlexityStudio/Source/Vendors/glm
+	url = https://github.com/g-truc/glm.git
+[submodule "PlexityStudio/Source/Vendors/spdlog"]
+	path = PlexityStudio/Source/Vendors/spdlog
+	url = https://github.com/gabime/spdlog.git
