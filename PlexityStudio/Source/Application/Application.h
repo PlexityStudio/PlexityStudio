@@ -1,18 +1,21 @@
 #pragma once
+#include <GLFW/glfw3.h>
+
 #include "Window/Window.h"
-
-#include <string>
-
-#include "GLFW/glfw3.h"
 
 namespace Plexity
 {
 	class Application
 	{
 	public:
-		Application(const char* title, WindowExtent& windowExtent);
+		Application();
+		Application(const char* title, WindowExtent windowExtent);
 
+	public:
+		int getWindowStatus() const { return glfwWindowShouldClose(window); }
+		static void pollWindowEvents() { glfwPollEvents(); }
+		
 	protected:
-		GLFWwindow* window = {};
+		GLFWwindow* window = nullptr;
 	};
 }

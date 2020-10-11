@@ -9,4 +9,3 @@ namespace Plexity
 		uint32_t height;
 	};
 }
-

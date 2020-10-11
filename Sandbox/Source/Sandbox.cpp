@@ -1,27 +1,28 @@
-#include "Plexity.h"
+#include "./Sandbox.h"
 
-class Sandbox final : Plexity::Layout
+Sandbox::Sandbox() : Application()
 {
-public:
-	~Sandbox() override;
-	void OnAwake() override;
-	void OnShutdown() override;
-};
+	application = Application("Sandbox", Plexity::WindowExtent{ 800, 600 });
+	backend = Plexity::GraphicsBackend::Vulkan;
 
-Sandbox::~Sandbox()
-{
+	Plexity::GraphicsLoader::chooseBackend(&backend);
 }
 
-void Sandbox::OnAwake()
+void Sandbox::run()
 {
+	while (!application.getWindowStatus())
+	{
+		pollWindowEvents();
+	}
 }
 
-void Sandbox::OnShutdown()
+void Start()
 {
+	Sandbox sandbox{};
+	sandbox.run();
 }
 
-int main()
+int main(int argc, char* argv[])
 {
-	//Sandbox sandbox{};
-	//sandbox.createApplication();
+	Start();
 }
